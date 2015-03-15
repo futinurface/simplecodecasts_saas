@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SimplecodecastsSaas</title>
+  <title>Dev Match</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar-default navbar-static" role="navigation">
+<nav class="navbar-inverse navbar-static" role="navigation">
     <div class='container'>
      <div class="navbar-header">  
        <button type="button" class="navbar-toggle" data-toggle="collapse" data-tartget="#main-nav-collapse">
@@ -15,8 +15,11 @@
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
-       </button>  
-       <%= link_to 'SaaS', root_path, class: 'navbar-brand' %>
+       </button>
+       <%= link_to root_path, class: 'navbar-brand' do %>
+         <i class="fa fa-users"></i>
+         Dev Match
+       <% end %>
       </div> 
       <div class="collapse navbar-collapse" id="main-nav-collapse"> 
         <ul class="nav navbar-nav navbar-right">
